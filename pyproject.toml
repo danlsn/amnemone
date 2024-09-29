@@ -22,14 +22,13 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: Implementation :: CPython",
-  "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/Daniel Lawson/amnemone#readme"
-Issues = "https://github.com/Daniel Lawson/amnemone/issues"
-Source = "https://github.com/Daniel Lawson/amnemone"
+Documentation = "https://github.com/danlsn/amnemone#readme"
+Issues = "https://github.com/danlsn/amnemone/issues"
+Source = "https://github.com/danlsn/amnemone"
 
 [tool.hatch.version]
 path = "src/amnemone/__about__.py"
