@@ -37,6 +37,12 @@ path = "src/amnemone/__about__.py"
 type = "virtual"
 path = ".venv"
 
+[tool.hatch.envs.hatch-test]
+extra-args = ["-vv"]
+randomize = true
+retries = 2
+retry-delay = 1
+
 [[tool.hatch.envs.hatch-test.matrix]]
 python = ["3.12", "3.11", "3.10", "3.9", "3.8"]
 
