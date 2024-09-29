@@ -45,6 +45,20 @@ extra-dependencies = [
 [tool.hatch.envs.types.scripts]
 check = "mypy --install-types --non-interactive {args:src/amnemone tests}"
 
+[tool.ruff.format]
+preview = true
+quote-style = "single"
+
+[tool.ruff.lint]
+preview = true
+extend-select = ["C901"]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"docs/.hooks/*" = ["INP001", "T201"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["foo", "bar"]
+
 [tool.coverage.run]
 source_pkgs = ["amnemone", "tests"]
 branch = true
