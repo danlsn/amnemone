@@ -40,5 +40,5 @@ class MnemonicList:
     def _encode(self, input_: list[int]):
         return [self.words[i] for i in input_]
 
-    def _decode(self, input_array: list[str | bytes]):
+    def _decode(self, input_array: list[str]):
         return [self.words.index(word) for word in input_array]
