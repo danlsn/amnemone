@@ -1,9 +1,9 @@
-import zlib
+from __future__ import annotations
+
+import base64
+import random
 from dataclasses import dataclass
-from functools import (
-    cached_property
-)
-from pathlib import Path
+from functools import cached_property
 
 
 @dataclass
@@ -20,8 +20,7 @@ class MnemonicList:
         return len(self.words)
 
     def random(self, n: int = 1) -> list[str]:
-        import random
-        return random.choices(self.words, k=n)
+        return random.choices(self.words, k=n)  # noqa: S311
 
     def from_int(self, n: int) -> list[str]:
         output = []
@@ -36,7 +35,6 @@ class MnemonicList:
         return self.from_int(int(hex_string, 16))
 
     def from_base64(self, base64_string: str) -> list[str]:
-        import base64
         return self.from_int(int.from_bytes(base64.b64decode(base64_string), 'big'))
 
     def _encode(self, input_: list[int]):

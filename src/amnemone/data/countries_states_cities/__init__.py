@@ -6,35 +6,25 @@ from pathlib import Path
 
 
 def cities():
-    with open(Path(__file__).parent / 'cities.csv', 'r') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            yield row
+    with open(Path(__file__).parent / 'cities.csv', encoding='utf-8') as f:
+        yield from csv.DictReader(f)
 
 
 def countries():
-    with open(Path(__file__).parent / 'countries.csv', 'r') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            yield row
+    with open(Path(__file__).parent / 'countries.csv', encoding='utf-8') as f:
+        yield from csv.DictReader(f)
 
 
 def regions():
-    with open(Path(__file__).parent / 'regions.csv', 'r') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            yield row
+    with open(Path(__file__).parent / 'regions.csv', encoding='utf-8') as f:
+        yield from csv.DictReader(f)
 
 
 def states():
-    with open(Path(__file__).parent / 'states.csv', 'r') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            yield row
+    with open(Path(__file__).parent / 'states.csv', encoding='utf-8') as f:
+        yield from csv.DictReader(f)
 
 
 def subregions():
-    with open(Path(__file__).parent / 'subregions.csv', 'r') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            yield row
+    with open(Path(__file__).parent / 'subregions.csv', encoding='utf-8') as f:
+        yield from csv.DictReader(f)
