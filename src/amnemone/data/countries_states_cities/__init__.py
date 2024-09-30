@@ -1,9 +1,10 @@
+from __future__ import annotations
+
 import csv
 
 __ALL__ = ['Cities', 'Countries', 'regions', 'states', 'subregions']
 
 from functools import cached_property
-
 from pathlib import Path
 
 from amnemone.models import MnemonicList
