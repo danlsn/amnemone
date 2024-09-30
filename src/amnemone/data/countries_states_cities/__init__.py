@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import csv
 
 __ALL__ = ['Cities', 'Countries', 'regions', 'states', 'subregions']
@@ -47,6 +49,7 @@ class Cities(MnemonicList):
     @cached_property
     def words(self) -> list[str]:
         with open(Path(__file__).parent / 'cities.csv', encoding='utf-8') as f:
+            row: dict[str, str]
             # noinspection PyTypeChecker
             return [row[self._key] for row in csv.DictReader(f)]
 
