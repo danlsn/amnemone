@@ -1,0 +1,12 @@
+[submodule "data/orchard-street-wordlists"]
+	path = data/orchard-street-wordlists
+	url = https://github.com/sts10/orchard-street-wordlists.git
+	branch = v0.4.1
+[submodule "data/generated-wordlists"]
+	path = data/generated-wordlists
+	url = https://github.com/sts10/generated-wordlists.git
+	branch = v0.4.1
+[submodule "data/countries-states-cities-database"]
+	path = data/countries-states-cities-database
+	url = https://github.com/dr5hn/countries-states-cities-database.git
+	branch = v2.4
