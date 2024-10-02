@@ -23,5 +23,3 @@ def test_decode_country_emojis_to_ints():
 
     mn = Countries(key='emoji')
     assert mn._decode(test_input) == expected_output
-
-

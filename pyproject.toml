@@ -23,7 +23,9 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: Implementation :: CPython",
 ]
-dependencies = []
+dependencies = [
+    "bidict>=0.23.1",
+]
 
 [project.urls]
 Documentation = "https://github.com/danlsn/amnemone#readme"
@@ -36,6 +38,7 @@ path = "src/amnemone/__about__.py"
 [tool.hatch.envs.default]
 type = "virtual"
 path = ".venv"
+installer = "uv"
 
 [tool.hatch.envs.hatch-test]
 extra-args = ["-vv"]
