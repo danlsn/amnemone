@@ -1,8 +1,6 @@
 import string
-from typing import List
 
 import pytest
-
 from amnemone.abc import WordList
 
 
@@ -69,6 +67,7 @@ def test_sort_shuffled_wordlist(ascii_upper_wordlist):
     wl.words = shuffled_wl
     wl.sort()
     assert wl.words == [*string.ascii_uppercase]
+    assert wl.radix == 26
 
 
 def test_sort_wordlist_reverse_alphabet(ascii_upper_wordlist):
@@ -76,6 +75,3 @@ def test_sort_wordlist_reverse_alphabet(ascii_upper_wordlist):
     wl.sort(reverse=True)
     assert wl.words == [*string.ascii_uppercase][::-1]
     assert wl.radix == 26
-
-
-
