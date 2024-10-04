@@ -2,6 +2,7 @@
 
 [![PyPI - Version](https://img.shields.io/pypi/v/amnemone.svg)](https://pypi.org/project/amnemone)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/amnemone.svg)](https://pypi.org/project/amnemone)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/amnemone)
 
 -----
 
