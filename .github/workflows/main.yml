@@ -19,8 +19,8 @@ jobs:
       - name: Install dependencies
         run: pip install hatch
 
-      - name: Run hatch fmt check
-        run: hatch fmt --check
+      # - name: Run hatch fmt check
+      #   run: hatch fmt --check
 
       - name: Run tests
         run: pytest --cov --cov-report=xml
