@@ -19,6 +19,13 @@ jobs:
       - name: Install dependencies
         run: pip install hatch
 
+      - name: Install UV
+        run: curl -LsSf https://github.com/astral-sh/uv/releases/latest/download/uv-installer.sh | sh
+  
+      - name: Install ourself
+        run: |
+          uv pip install --system -e .
+
       # - name: Run hatch fmt check
       #   run: hatch fmt --check
 
