@@ -24,7 +24,7 @@ jobs:
   
       - name: Install ourself
         run: |
-          uv pip install --system -e .
+          uv pip install -e .
 
       # - name: Run hatch fmt check
       #   run: hatch fmt --check
